@@ -1,6 +1,6 @@
 console.log("At Service Worker file")
 
-const cacheName = "UlonCache-v80.104.12"
+const cacheName = "UlonCache-v2"
 // const siteName = "https://pwa.tiomnyilis.repl.co/"
 const pathToOfflinePage = "sourceForServiceWorker/offline-page.html"
 const sorces = [

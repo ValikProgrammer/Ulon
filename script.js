@@ -1,4 +1,5 @@
-alert("hello world!")
+console.log("At Push file")
+alert("hello world! It is push manager does not work now");
 // if ('PushManager' in window) {
 //   console.log("Push manager in window!")
 //   alert(("Push manager in window!"))
