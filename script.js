@@ -1,5 +1,17 @@
-console.log("At Push file")
-alert("hello world! It is push manager does not work now");
+console.log("[SW] Service Worker Is registring now in /templates/index.tpl !");
+//window.addEventListener('load',  ()=> {
+ try {
+    const message =  navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('/service-worker.js')
+    console.log("[SW] Register of service worker is success!!",message)
+ } catch (e){
+    console.log("[SW] Fail to register service worker",e)
+ }
+
+
+
+console.log("[PUSH] At Push file")
+alert("hello world! It is push manager (does not work now)");
 // if ('PushManager' in window) {
 //   console.log("Push manager in window!")
 //   alert(("Push manager in window!"))
