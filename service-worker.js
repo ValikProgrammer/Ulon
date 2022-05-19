@@ -1,5 +1,3 @@
-console.log("At Service Worker file")
-
 const cacheName = "UlonCache-v3"
 // const siteName = "https://pwa.tiomnyilis.repl.co/"
 const pathToOfflinePage = "sourceForServiceWorker/offline-page.html"

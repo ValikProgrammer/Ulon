@@ -7,6 +7,7 @@
   "background_color": "white",
   
   "display": "standalone",
+  "display_override": ["window-control-overlay", "minimal-ui"],
   "start_url": ".",
     
   "icons": [
