@@ -1,6 +1,6 @@
 console.log("[SW] Service Worker Is registring now in /templates/index.tpl !");
 //window.addEventListener('load',  ()=> {
- try {
+try {
     const message =  navigator.serviceWorker.register('/service-worker.js')
     navigator.serviceWorker.register('/service-worker.js')
     console.log("[SW] Register of service worker is success!!",message)
