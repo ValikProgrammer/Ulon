@@ -13,22 +13,22 @@
     
   "icons": [
     {
-        "src": "sourceForServiceWorker/icons/test/icon-192x192.png",
+        "src": "/sourceForServiceWorker/icons/icon-192-transparent.png",
         "sizes": "192x",
         "type": "image/png"
     },
     {
-        "src": "sourceForServiceWorker/icons/test/icon-256x256.png",
+        "src": "/sourceForServiceWorker/icons/icon-256-transparent.png",
         "sizes": "256x",
         "type": "image/png"
     },
     {
-        "src": "sourceForServiceWorker/icons/test/icon-384x384.png",
+        "src": "/sourceForServiceWorker/icons/icon-384-transparent.png",
         "sizes": "384x",
         "type": "image/png"
     },
     {
-        "src": "sourceForServiceWorker/icons/test/icon-512x512.png",
+        "src": "/sourceForServiceWorker/icons/icon-512-transparent.png",
         "sizes": "512x",
         "type": "image/png"
     }

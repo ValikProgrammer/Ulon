@@ -1,4 +1,4 @@
-const cacheName = "UlonCache-v3"
+const cacheName = "UlonCache-v7"
 // const siteName = "https://pwa.tiomnyilis.repl.co/"
 const pathToOfflinePage = "sourceForServiceWorker/offline-page.html"
 const sorces = [

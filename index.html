@@ -4,25 +4,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="white" /> <!--тема в pwa там будет сверху полоса и она бедт вот такоего цвета-->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/sourceForServiceWorker/icons/favicon.ico" /> <!--иконка в заголовке-->    
+    <title>Ulon - Еverything is simple</title>
 
-    <link rel="manifest" href="manifest.json" />
-    <link rel="icon" href="sourceForServiceWorker/icons/favicon.ico" /> <!--иконка в заголовке-->    
-
+<!--     sourceForServiceWorker -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-touch-fullscreen" content="yes" />
-
     <meta name="apple-mobile-web-app-title" content="Ulon">
     <meta name="apple-mobile-web-app-status-bar-style" content="white"> <!-- CONTENT="DEFAULT" NOT UPPER!-->
-    
-    
-<!--     sourceForServiceWorker -->
+
     <!-- Icons For IOS  -->
-    <link rel="apple-touch-icon" sizes="512x512" href="sourceForServiceWorker/icons/icon-512x512.png">
-    <link rel="apple-touch-icon" sizes="384x384" href="sourceForServiceWorker/icons/icon-384x384.png">
-    <link rel="apple-touch-icon" sizes="256x256" href="sourceForServiceWorker/icons/icon-256x256.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="sourceForServiceWorker/icons/icon-192x192.png">
+    <link href="/sourceForServiceWorker/icons/icon-512-white.png" rel="apple-touch-icon" sizes="512x512" >
+    <link href="/sourceForServiceWorker/icons/icon-384-white.png" rel="apple-touch-icon" sizes="384x384" >
+    <link href="/sourceForServiceWorker/icons/icon-256-white.png" rel="apple-touch-icon" sizes="256x256" >
+    <link href="/sourceForServiceWorker/icons/icon-192-white.png" rel="apple-touch-icon" sizes="192x192" >
+
     <!-- Screens For Ios -->
+    <link href="/sourceForServiceWorker/splashscreens/iphone5_splash.png" media="(device-width: 20rem) and (device-height: 35.5rem) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/sourceForServiceWorker/splashscreens/iphone6_splash.png" media="(device-width: 23.4375rem) and (device-height: 41.6875rem) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/sourceForServiceWorker/splashscreens/iphoneplus_splash.png" media="(device-width: 38.8125rem) and (device-height: 69rem) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/sourceForServiceWorker/splashscreens/iphonex_splash.png" media="(device-width: 23.4375rem) and (device-height: 50.75rem) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/sourceForServiceWorker/splashscreens/iphonexr_splash.png" media="(device-width: 25.875rem) and (device-height: 56rem) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/sourceForServiceWorker/splashscreens/iphonexsmax_splash.png" media="(device-width: 25.875rem) and (device-height: 56rem) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/sourceForServiceWorker/splashscreens/ipad_splash.png" media="(device-width: 48rem) and (device-height: 64rem) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/sourceForServiceWorker/splashscreens/ipadpro1_splash.png" media="(device-width: 52.125rem) and (device-height: 69.5rem) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/sourceForServiceWorker/splashscreens/ipadpro3_splash.png" media="(device-width: 52.125rem) and (device-height: 74.625rem) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/sourceForServiceWorker/splashscreens/ipadpro2_splash.png" media="(device-width: 64rem) and (device-height: 85.375rem) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+            
+
 <!--     <link href="sourceForServiceWorker/Screens2/splash_ipad_pro_12,9.jpg" sizes="2732x2048" rel="apple-touch-startup-image" />
     <link href="sourceForServiceWorker/Screens2/splash_ipad_pro.jpg"      sizes="2224x1668" rel="apple-touch-startup-image" />
     <link href="sourceForServiceWorker/Screens2/splash_ipad.jpg"          sizes="2048x1536" rel="apple-touch-startup-image" />
@@ -35,99 +46,79 @@
     <link href="sourceForServiceWorker/Screens2/splash_iphoneX.jpg"       sizes="1125x2346" rel="apple-touch-startup-image" />
     <link href="sourceForServiceWorker/Screens2/splash_iphoneXr:11.jpg"   sizes="828x1792"  rel="apple-touch-startup-image" />
  -->
-    <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    
 
-    
-    <title>Ulon - Еverything is simple</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    } 
-    .App {
-        text-align: center;
-    }
-    .App-logo {
-        height: 50vmin;
-        pointer-events: none;
-    }
-    @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-      }
-    }
-    .App-header {
-        background-color: white;/*#282c34; */
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: calc(10px + 2vmin); 
-        font-size: 3px;
-        color: white;
-    }
-    @keyframes App-logo-spin {
-    0% {
-        transform: rotate(0deg);
-      }
-    100% {
-        transform: rotate(360deg);
-      }
-    }
-    a {
-      font-family: 'Cinzel', serif;
-      font-size: 5vmin;
-      text-decoration: none;
-      margin-top: 10vmin;
-    }
-    button {
-      /* text-decoration: none; */
-      border:none;
-      /* background-color: #3485e4; */
-      /* background-color: #BE77E6; */
-      background-color: #4e457b;
-      color: #fff;
-      height: 5vmin;
-      min-width: 22vmin;
-      font-size: 3vmin;
-      margin: 5px auto;
-      padding: auto;
-      text-align: center;
-      border-radius: 4px;
-    }
-</style>
-
+      <style>
+          body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            } 
+          .App {
+              text-align: center;
+          }
+          .App-logo {
+              height: 50vmin;
+              pointer-events: none;
+          }
+          @media (prefers-reduced-motion: no-preference) {
+          .App-logo {
+              animation: App-logo-spin infinite 20s linear;
+            }
+          }
+          .App-header {
+              background-color: white;/*#282c34; */
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              font-size: calc(.625rem + 2vmin); 
+              font-size: .1875rem;
+              color: white;
+          }
+          @keyframes App-logo-spin {
+          0% {
+              transform: rotate(0deg);
+            }
+          100% {
+              transform: rotate(360deg);
+            }
+          }
+          a {
+            font-family: 'Cinzel', serif;
+            font-size: 5vmin;
+            text-decoration: none;
+            margin-top: 10vmin;
+          }
+          button {
+            /* text-decoration: none; */
+            border:none;
+            /* background-color: #3485e4; */
+            /* background-color: #BE77E6; */
+            background-color: #4e457b;
+            color: #fff;
+            height: 5vmin;
+            min-width: 22vmin;
+            font-size: 3vmin;
+            margin: .3125rem auto;
+            padding: auto;
+            text-align: center;
+            border-radius: .25rem;
+          }
+      </style>
     </head>
     <body>
-            <div class="App">
-                <header class="App-header">
-                <img src="sourceForServiceWorker/icons/icon-512-512.png" class="App-logo" alt="logo" >
-                <a href="http://my-ulon.com" >перейти на сайт Ulon </a>
-                <button >subscribe</button>
-                </header>
-        </div>
-      <!-- <script >
-        console.log("kdnmvksndvknsdvk")
-      </script> -->
-<!--       <script src="script.js"></script> -->
-       
-    <script>
+      <div class="App">
+        <header class="App-header">
+          <img src="/sourceForServiceWorker/icons/icon-512-transparent.png" class="App-logo" alt="logo" >
+          <a href="http://my-ulon.com" >перейти на сайт Ulon </a>
+          <button >subscribe</button>
+        </header>
+      </div>
+      <script>
 console.log("Service Worker Is registring now in /templates/index.tpl !");
 //window.addEventListener('load',  ()=> {
  try {
@@ -139,7 +130,7 @@ console.log("Service Worker Is registring now in /templates/index.tpl !");
  }
   
 //})
-</script>
+      </script>
     </body>
 </html>
 
