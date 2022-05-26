@@ -1,7 +1,7 @@
 {
   "name": "Ulon",
   "short_name": "Ulon",
-  "description":"Ulon PWA - Everything is simple",
+  "description":"Ulon PWA Working App",
   
   "theme_color": "white",
   "background_color": "white",
@@ -9,41 +9,27 @@
   "display": "standalone",
   "display_override": ["window-control-overlay", "minimal-ui"],
   "start_url": ".",
-  "scope":".",
     
   "icons": [
     {
         "src": "sourceForServiceWorker/icons/test/icon-192x192.png",
-        "sizes": "192x",
+        "sizes": "192x192",
         "type": "image/png"
     },
     {
         "src": "sourceForServiceWorker/icons/test/icon-256x256.png",
-        "sizes": "256x",
+        "sizes": "256x256",
         "type": "image/png"
     },
     {
         "src": "sourceForServiceWorker/icons/test/icon-384x384.png",
-        "sizes": "384x",
+        "sizes": "384x384",
         "type": "image/png"
     },
     {
         "src": "sourceForServiceWorker/icons/test/icon-512x512.png",
-        "sizes": "512x",
+        "sizes": "512x512",
         "type": "image/png"
     }
-  ],
-  
-  "shortcuts" : [
-  {
-    "name": "feedback",
-    "url": "/feedback",
-    "description": "Here you can leave your feedback"
-  },
-  {
-    "name": "Create new order",
-    "url": "ad/create"
-  },
-]
-  
+  ]
 }
