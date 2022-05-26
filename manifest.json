@@ -35,15 +35,15 @@
   ],
   
   "shortcuts" : [
-  {
-    "name": "feedback",
-    "url": "/feedback",
-    "description": "Here you can leave your feedback"
-  },
-  {
-    "name": "Create new order",
-    "url": "ad/create"
-  },
-]
+    {
+      "name": "feedback",
+      "url": "/feedback",
+      "description": "Here you can leave your feedback"
+    },
+    {
+      "name": "Create new order",
+      "url": "ad/create"
+    }
+  ]
   
 }
