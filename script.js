@@ -10,8 +10,6 @@
 //     console.log("[SW] Fail to register service worker",e)
 //  }
 
-
-
 // console.log("[PUSH] At Push file")
 // alert("hello world! It is push manager (does not work now)");
 // if ('PushManager' in window) {
