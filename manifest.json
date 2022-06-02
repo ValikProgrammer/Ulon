@@ -42,7 +42,7 @@
     },
     {
       "name": "Create new order",
-      "url": "ad/create"
+      "url": "/ad/create"
     }
   ]
   
